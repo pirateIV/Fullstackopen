@@ -1,5 +1,64 @@
 * {
-    font-family: sans-serif;
+    font-family: "Inter", sans-serif;
+}
+
+html {
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+}
+
+body {
+    padding-left: 2rem;
+}
+
+.contact {
+    margin: 0.5rem 0;
+
+    &>span {
+        width: 400px;
+
+        & span:first-child {
+            color: #191919;
+            font-weight: 500;
+        }
+        & span:last-child {
+            color: gray;
+        }
+    }
+
+    button {
+        margin-left: 30px;
+    }
+}
+
+button {
+    border: none;
+    background-color: #4539f6;
+    color: white;
+    padding: 5px 12px;
+    border-radius: 5px;
+
+    &:hover {
+        filter: brightness(90%);
+    }
+}
+
+label {
+    font-size: 15px;
+    font-weight: 500;
+    text-transform: capitalize;
+    display: block;
+    margin-bottom: 10px;
+}
+
+input {
+    padding: 6px 12px;
+    border: 1px solid #d1d5dc;
+    border-radius: 4px;
+    margin-bottom: 20px;
+
+    &:focus {
+        outline-color: #4539f6;
+    }
 }
 
 .success {

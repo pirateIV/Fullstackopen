@@ -31,14 +31,14 @@ const Persons = ({ persons, filterQuery, handleDeleteContact }) => {
 
 const FilteredPersons = ({ person, handleDeleteContact }) => {
   return (
-    <p>
+    <div className="contact">
       <span>
-        {person.name} {person.number}
+        <span>{person.name}</span> <span>{person.number}</span>
       </span>
       <button onClick={() => handleDeleteContact(person.name, person.id)}>
         Delete
       </button>
-    </p>
+    </div>
   );
 };
 
