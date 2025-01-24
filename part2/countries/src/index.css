@@ -1,0 +1,81 @@
+* {
+    font-family: "Inter", sans-serif;
+}
+
+html {
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+}
+
+body {
+    padding-left: 2rem;
+}
+
+input {
+    width: 300px;
+    padding: 6px 12px;
+    border: 1px solid #d1d5dc;
+    border-radius: 4px;
+    margin-bottom: 20px;
+
+    &:focus {
+        outline-color: #4539f6;
+    }
+}
+
+label {
+    font-size: 15px;
+    font-weight: 500;
+    text-transform: capitalize;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.country-details div span {
+
+    &:first-of-type {
+        color: #454545;
+    }
+
+    &:last-of-type {
+        font-weight: 500;
+        margin-left: 2px;
+    }
+}
+
+.country-details div span .country-name {
+    margin: 5px 0;
+    font-size: 15px;
+}
+
+em {
+    font-weight: 500;
+    color: gray;
+    font-size: 14px;
+}
+
+.country {
+    color: #262626;
+    font-weight: 500;
+}
+
+.fallback {
+    font-weight: 500;
+}
+
+button {
+    color: #262626;
+    border: 1px solid #d1d5dc;
+    font-weight: 500;
+    padding: 5px 12px;
+    border-radius: 5px;
+    font-size: 12px;
+
+    &:hover {
+        filter: brightness(95%);
+    }
+}
+
+.medium {
+    color: black;
+    font-weight: 500;
+}
