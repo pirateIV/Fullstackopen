@@ -32,7 +32,7 @@ label {
 
 .country-details div span {
 
-    &:first-of-type {
+    &:first-of-type(:not(.medium)) {
         color: #454545;
     }
 

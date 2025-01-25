@@ -1,4 +1,4 @@
-const CountriesDisplay = ({ searchQuery, setCountries, countryNames }) => {
+const CountriesDisplay = ({ searchQuery, setSearchQuery, countryNames }) => {
   return (
     <div>
       {countryNames.length > 10 ? (
@@ -11,7 +11,9 @@ const CountriesDisplay = ({ searchQuery, setCountries, countryNames }) => {
         countryNames.map((name) => (
           <div key={name} className="country-name">
             <span>{name}</span>{" "}
-            <button onClick={() => setCountries([name])}>Show</button>
+            <button onClick={() => setSearchQuery(name.toLowerCase())}>
+              Show
+            </button>
           </div>
         ))
       )}

@@ -33,7 +33,7 @@ const App = () => {
       <Countries
         searchQuery={searchQuery}
         countryNames={countryNames}
-        setCountries={setCountries}
+        setSearchQuery={setSearchQuery}
       />
     </div>
   );

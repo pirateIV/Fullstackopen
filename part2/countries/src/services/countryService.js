@@ -1,14 +1,13 @@
 import axios from "axios";
-
-const baseUrl = "https://studies.cs.helsinki.fi/restcountries/api";
+import { countriesUrl } from "../config";
 
 const getAll = () => {
-  const request = axios.get(`${baseUrl}/all`);
-  return request.then((res) => res.data);
+  const request = axios.get(`${countriesUrl}/all`);
+  return request.then((res) => res.data);   
 };
 
 const getSingle = (name) => {
-  const request = axios.get(`${baseUrl}/name/${name}`);
+  const request = axios.get(`${countriesUrl}/name/${name}`);
   return request.then((res) => res.data);
 };
 

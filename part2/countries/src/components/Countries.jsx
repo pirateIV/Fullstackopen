@@ -2,7 +2,7 @@ import Country from "./Country";
 import CountriesDisplay from "./CountriesDisplay";
 import CountriesFallback from "./CountriesFallback";
 
-const Countries = ({ searchQuery, countryNames, setCountries }) => {
+const Countries = ({ searchQuery, countryNames, setSearchQuery }) => {
   return (
     <div className="countries">
       {countryNames.length === 1 ? (
@@ -10,7 +10,7 @@ const Countries = ({ searchQuery, countryNames, setCountries }) => {
       ) : searchQuery ? (
         <CountriesDisplay
           searchQuery={searchQuery}
-          setCountries={setCountries}
+          setSearchQuery={setSearchQuery}
           countryNames={countryNames}
         />
       ) : (
