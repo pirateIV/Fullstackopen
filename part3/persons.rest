@@ -18,11 +18,23 @@ GET http://localhost:3001/api/persons/0
 
 ###
 
+# Create a new person entry
 POST http://localhost:3001/api/persons
 Content-Type: application/json
 
 {
     "name": "Abolade Benjamin",
+    "number": "90-42-06-8728"
+}
+
+###
+
+# Send a bad request to create a new entry
+POST http://localhost:3001/api/persons
+Content-Type: application/json
+
+{
+    "name": "",
     "number": "90-42-06-8728"
 }
 
